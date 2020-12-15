@@ -21,9 +21,9 @@ class Game:
 
 
     def is_valid(self, word):
-        # if isinstance(word, str):
-        #     if not word:
-        #         return False
+        #if isinstance(word, str):
+             #if not word:
+                #return False
 
         #     for letter in word:
         #         if letter not in self.grid:
@@ -35,6 +35,10 @@ class Game:
 
         # print(f'{word} is valid !')
         # return True
+
+        if not word:
+            return False
+
         return self.__check_dictionary(word)
 
     @staticmethod
