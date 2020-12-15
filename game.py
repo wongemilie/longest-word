@@ -39,7 +39,14 @@ class Game:
         if not word:
             return False
 
+        for letter in word:
+            if letter not in self.grid:
+                print(f'Letter {letter} is not valid !')
+                return False
+
+        print(f'{word} is valid !')
         return self.__check_dictionary(word)
+
 
     @staticmethod
     def __check_dictionary(word):
