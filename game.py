@@ -32,6 +32,7 @@ class Game:
             print(f'{word} is not a string !')
             return False
 
+        print(f'{word} is valid !')
         return True
 
 
